@@ -1,18 +1,21 @@
 {
-  "name": "fly",
-  "version": "0.1.0",
-  "description": "searches for Github repos or people via command line",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Adam Siwiec",
-  "license": "MIT",
-  "preferGlobal": true,
-  "bin": {
-    "fly": "fly.js"
-  },
-  "dependencies": {
-    "opener": "^1.4.2",
-    "request": "^2.75.0"
-  }
+    "name": "fly",
+    "version": "0.1.0",
+    "description": "Search for Github repos or people via command line",
+    "keywords": ["cli", "search"],
+    "repository": "https://github.com/adamsiwiec/fly.git",
+
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Adam Siwiec",
+    "license": "MIT",
+    "preferGlobal": true,
+    "bin": {
+        "fly": "fly.js"
+    },
+    "dependencies": {
+        "opener": "^1.4.2",
+        "request": "^2.75.0"
+    }
 }
