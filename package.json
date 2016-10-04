@@ -1,6 +1,6 @@
 {
-    "name": "fly",
-    "version": "0.1.0",
+    "name": "fly-cli",
+    "version": "0.1.1",
     "description": "Search for Github repos or people via command line",
     "keywords": ["cli", "search"],
     "repository": "https://github.com/adamsiwiec/fly.git",

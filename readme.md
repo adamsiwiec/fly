@@ -14,11 +14,20 @@ npm -v
 Install with npm
 
 ```
-npm install -g fly
-
+npm install -g fly-cli
 ```
 
+## Usage
 
+To find a repo:
+```
+fly adamsiwiec/fly
+```
+
+To find a person:
+```
+fly adamsiwiec
+```
 
 ## Built With
 
