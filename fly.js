@@ -3,9 +3,21 @@
 
 var request = require('request');
 var opener = require('opener');
+var flags = require('flags');
+var pack = require('./package.json');
 
 
-console.log('This is fly!');
+
+
+flags.defineBoolean('version');
+flags.parse();
+
+if (flags.get('version')) {
+    console.log(pack.version);
+    process.exit();
+}
+
+
 console.log('');
 
 
@@ -20,19 +32,35 @@ if (!repo) {
 }
 
 
+if (repo.indexOf('/')) {
 
+    request('https://api.github.com/repos/' + repo, function(err, res, body) {
+        if (!err && res.statusCode == 200) {
+            var link = "https://github.com/" + repo;
+            opener(link);
+            process.exit();
 
-
-
-request('https://github.com/' + repo, function(err, res, body) {
-    if (!err && res.statusCode == 200) {
-        var link = "https://github.com/" + repo;
-        opener(link);
+        }
+        console.log('This repo does not exist');
         process.exit();
 
-    }
+    });
 
-    console.log('This repo or person does not exist');
-    process.exit();
 
-});
+}
+
+else {
+
+    request('https://api.github.com/users/' + repo, function(err, res, body) {
+        if (!err && res.statusCode == 200) {
+            var link = "https://github.com/" + repo;
+            opener(link);
+            process.exit();
+
+        }
+        console.log('This person does not exist');
+        process.exit();
+
+    });
+
+}
