@@ -1,26 +1,30 @@
 {
-    "name": "fly-cli",
-    "version": "0.2.1",
-    "description": "Search for Github repos or people via command line",
-    "keywords": [
-        "cli",
-        "search"
-    ],
-    "repository": "https://github.com/adamsiwiec/fly.git",
-    "scripts": {
-        "test": "./node_modules/.bin/mocha --reporter spec"
-    },
-    "author": "Adam Siwiec",
-    "license": "MIT",
-    "preferGlobal": true,
-    "bin": {
-        "fly": "fly.js"
-    },
-    "dependencies": {
-        "chai": "^3.5.0",
-        "flags": "^0.1.3",
-        "mocha": "^3.1.0",
-        "opener": "^1.4.2",
-        "request": "^2.75.0"
-    }
+  "name": "fly-cli",
+  "version": "0.4.0",
+  "description": "Search for Github repos or people via command line",
+  "keywords": [
+    "cli",
+    "search"
+  ],
+  "repository": "https://github.com/adamsiwiec/fly.git",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "Adam Siwiec",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "fly": "fly-cli.js"
+  },
+  "dependencies": {
+    "needle": "^1.1.2",
+    "opener": "^1.4.2"
+
+  },
+  "devDependencies": {
+    "xo": "^0.16.0"
+},
+  "xo": {
+    "spaces": 4
+  }
 }
