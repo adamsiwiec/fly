@@ -1,4 +1,5 @@
 # Fly
+[![Code Climate](https://codeclimate.com/github/adamSiwiec/fly/badges/gpa.svg)](https://codeclimate.com/github/adamSiwiec/fly)
 
 Search for Github repos or people via command line
 
