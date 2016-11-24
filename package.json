@@ -17,13 +17,13 @@
     "fly": "fly-cli.js"
   },
   "dependencies": {
+    "github": "^5.2.2",
     "needle": "^1.1.2",
     "opener": "^1.4.2"
-
   },
   "devDependencies": {
     "xo": "^0.16.0"
-},
+  },
   "xo": {
     "spaces": 4
   }
