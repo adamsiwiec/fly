@@ -3,7 +3,7 @@
 
 Search for Github repos or people via command line
 
-[Imgur](http://i.imgur.com/z4NCsF5.gif)
+[![Imgur](http://i.imgur.com/z4NCsF5.gif)]()
 
 ## Getting Started
 
