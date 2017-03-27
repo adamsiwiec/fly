@@ -8,7 +8,6 @@
   ],
   "repository": "https://github.com/adamsiwiec/fly.git",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "author": "Adam Siwiec",
   "license": "MIT",
