@@ -17,12 +17,12 @@
     "fly": "fly-cli.js"
   },
   "dependencies": {
-    "github": "^5.2.2",
+    "github": "^9.1.0",
     "needle": "^1.1.2",
     "opener": "^1.4.2"
   },
   "devDependencies": {
-    "xo": "^0.16.0"
+    "xo": "^0.18.1"
   },
   "xo": {
     "spaces": 4

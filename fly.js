@@ -1,30 +1,28 @@
-	var needle = require('needle');
-	var opener = require('opener');
-	var GitHubApi = require('github');
+	const needle = require('needle');
+	const opener = require('opener');
+	const GitHubApi = require('github');
 
-	var exports = module.exports = {};
-
-	exports.fly = function(type, repo) {
-	    var github = new GitHubApi({
-	        // optional args
+	module.exports.fly = function(type, repo) {
+	    const github = new GitHubApi({
+	        // Optional args
 
 	        protocol: 'https',
-	        host: 'api.github.com', // should be api.github.com for GitHub
+	        host: 'api.github.com', // Should be api.github.com for GitHub
 	        headers: {
 	            'user-agent': 'adamsiwiec' // GitHub is happy with a unique user agent
 	        },
-	        followRedirects: false, // default: true; there's currently an issue with non-get redirects, so allow ability to disable follow-redirects
+	        followRedirects: false, // Default: true; there's currently an issue with non-get redirects, so allow ability to disable follow-redirects
 	        timeout: 5000
 	    });
 
 	    if (type === 'person') {
 	        github.users.getForUser({
-	            user: repo
-	        }, function(err, res) {
+	            username: repo
+	        }, (err, res) => {
 	            if (err) {
 	                console.log(err);
 	            }
-	            var user = JSON.stringify(res);
+	            const user = JSON.stringify(res);
 	        });
 	        var person = type;
 	        var requestUrl = 'users';
@@ -32,11 +30,11 @@
 	        var person = type;
 	        var requestUrl = 'repos';
 	    }
-	    var url = 'https://api.github.com/' + requestUrl + '/' + repo;
+	    const url = 'https://api.github.com/' + requestUrl + '/' + repo;
 
-	    needle.get(url, function(err, res) {
+	    needle.get(url, (err, res) => {
 	        if (!err && res.statusCode === 200) {
-	            var link = 'https://github.com/' + repo;
+	            const link = 'https://github.com/' + repo;
 	            opener(link);
 
 	            process.exit();
