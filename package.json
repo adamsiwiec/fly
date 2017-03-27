@@ -1,14 +1,13 @@
 {
   "name": "fly-cli",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "Search for Github repos or people via command line",
   "keywords": [
     "cli",
     "search"
   ],
   "repository": "https://github.com/adamsiwiec/fly.git",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Adam Siwiec",
   "license": "MIT",
   "preferGlobal": true,
