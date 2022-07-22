@@ -44,7 +44,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Adam Siwiec** - *Initial work* - [Github](https://github.com/adamsiwiec), [Website](https://adamsiwiec.github.io)
+* **Adam Siwiec** - *Initial work* - [Github](https://github.com/adamsiwiec), [Website](https://siwiec.us)
 
 See also the list of [contributors](https://github.com/adamsiwiec/fly/contributors) who participated in this project.
 
